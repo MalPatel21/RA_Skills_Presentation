@@ -1,0 +1,197 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 50px 20px;
+  color: #111;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 1.3rem;
+  margin-bottom: 60px;
+}
+
+/* Timeline Styles */
+.timeline { 
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 50px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #000;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+  cursor: pointer;
+  padding-left: 60px; /* ADD this to give space for the number */
+}
+
+.timeline-number {
+  position: absolute;
+  left: 0; /* move the circle fully to the left */
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+
+.timeline-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Smooth content transition */
+.timeline-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease, transform 0.4s ease;
+  background: #f4f4f4;
+  padding: 0 18px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  width: 560px;
+  margin: 0 auto;
+  text-align: left;
+  transform: translateX(-10px);
+}
+
+.timeline-item.active .timeline-content {
+  max-height: 500px;
+  opacity: 1;
+  padding: 15px 18px;
+  transform: translateX(0);
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 6px;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+
+/* new section  */
+
+/* Main header for the section */
+.experience-section h2 {
+  text-align: center;       /* centers text */
+  font-size: 1.3rem;        /* match subtitle size */
+  margin-bottom: 40px;
+  color: #555;
+  font-weight: bold;
+  padding-left: 0;          /* override container padding */
+}
+
+/* Center the main section title */
+.section-title {
+  text-align: center;
+  font-size: 1.3rem; /* match timeline subtitle */
+  margin-bottom: 40px;
+  color: #555;
+  font-weight: bold;
+}
+
+/* Accordion container (bullets aligned with timeline) */
+.experience-section {
+  max-width: 700px;   
+  margin: 0 auto;
+  padding-left: 50px; /* aligns bullets with timeline */
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+/* Subheaders (accordion titles) */
+.experience-header {
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem; /* match timeline-title */
+}
+
+/* Arrow */
+.arrow {
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Hidden content (experience bullets inside a box like timeline) */
+.experience-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+  transform: translateY(10px);
+  
+  /* --- Added box styling --- */
+  background: #f4f4f4;     /* match timeline content background */
+  padding: 15px 18px;      /* same padding as timeline boxes */
+  border-radius: 8px;      /* same rounded corners as timeline */
+  margin: 5px 0 15px 0;    /* spacing around box */
+  
+  font-size: 0.95rem;      /* match timeline content */
+  line-height: 1.5;
+  padding-left: 25px;      /* indent main bullets */
+}
+
+/* Main bullets inside box */
+.experience-content ul {
+  padding-left: 20px;  /* main bullets */
+  margin: 0;           /* remove extra margin */
+  list-style-type: disc; 
+}
+
+/* Sub-bullets (e.g., GitHub links) */
+.experience-content ul ul {
+  padding-left: 25px;   /* extra indent for sub-bullets */
+  font-size: 0.9rem;    /* slightly smaller */
+  list-style-type: circle; /* optional: circle for sub-bullets */
+  margin: 5px 0;        /* small spacing */
+}
+
+
+/* Active / expanded content */
+.experience-item.active .experience-content {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Rotate arrow when open */
+.experience-item.active .arrow {
+  transform: rotate(90deg);
+}
