@@ -1,8 +1,11 @@
-function toggleItem(element) {
-  element.classList.toggle("active");
+// Toggle timeline item content
+function toggleItem(titleElement) {
+  const item = titleElement.parentElement;
+  item.classList.toggle("active");
 }
 
-function toggleExperience(element) {
-  element.parentElement.classList.toggle("active");
+// Toggle experience section content
+function toggleExperience(headerElement) {
+  const item = headerElement.parentElement;
+  item.classList.toggle("active");
 }
-
