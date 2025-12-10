@@ -1,0 +1,130 @@
+<h1>Malika Patel</h1>
+<div class="subtitle">Academic & Professional Timeline</div>
+
+<div class="timeline">
+
+  <!-- ===== POINT 1: BARUCH ===== -->
+  <div class="timeline-item" onclick="toggleItem(this)">
+    <div class="timeline-number">1</div>
+    <div class="timeline-title">Baruch College</div>
+    <div class="timeline-content">
+      <ul>
+        <li>BBA in Computer Information Systems (Data Analytics)</li>
+        <li>Minor in Computer Science</li>
+        <li>Developed knowledge of end-to-end data workflows with SQL and Python</li>
+      </ul>
+    </div>
+    <div class="hint">(click to expand)</div>
+  </div>
+
+  <!-- ===== POINT 2: INTERNSHIP ===== -->
+  <div class="timeline-item" onclick="toggleItem(this)">
+    <div class="timeline-number">2</div>
+    <div class="timeline-title">Lilac Software Internship</div>
+    <div class="timeline-content">
+      <ul>
+        <li>Data Science Intern, mentored by a senior Data Scientist</li>
+        <li>Worked in a startup environment while balancing full-time studies</li>
+        <li>Contributed to projects while developing skills in key tools, such as Git and dbt</li>
+      </ul>
+    </div>
+    <div class="hint">(click to expand)</div>
+  </div>
+
+  <!-- ===== POINT 3: CAMBRIDGE ===== -->
+  <div class="timeline-item" onclick="toggleItem(this)">
+    <div class="timeline-number">3</div>
+    <div class="timeline-title">University of Cambridge</div>
+    <div class="timeline-content">
+      <ul>
+        <li>Pursuing a part-time Master's (MSt) in Healthcare Data Science</li>
+        <li>Learning research processes and healthcare data analysis, including R, OMOP, and study design</li>
+      </ul>
+    </div>
+    <div class="hint">(click to expand)</div>
+  </div>
+
+</div>
+
+<!-- JAVASCRIPT FUNCTION -->
+<script>
+  function toggleItem(element) {
+    element.classList.toggle("active");
+  }
+</script>
+
+
+  <!-- ===== NEW SECTION ===== -->
+
+<h2 class="section-title">Relevant Projects & Experiences</h2>
+
+<div class="experience-section">
+
+  <!-- ===== Baruch College ===== -->
+  <div class="experience-item">
+    <div class="experience-header" onclick="toggleExperience(this)">
+      <span class="arrow">&#9656;</span> <!-- right arrow -->
+      Baruch College
+    </div>
+
+    <div class="experience-content">
+      <ul>
+        <li>
+          <span style="text-decoration: underline;">Spotify Song Popularity Prediction:</span> Processed and analysed large Spotify datasets using Python and Google Cloud; performed cleaning, visualisation, and linear regression to explore factors influencing song popularity.
+          <ul>
+            <li><a href="https://github.com/MalPatel21/Spotify-Prediction/blob/main/Spotify_Song_Popularity_Prediction.pdf" target="_blank">View GitHub Repo</a></li>
+          </ul>
+        </li>
+        <li>
+          <span style="text-decoration: underline;">Medical Management Database:</span> Built a relational database in MS Access to manage patient records, appointments, billing, and insurance, using SQL, normalized tables, and forms to streamline healthcare operations.
+          <ul>
+            <li><a href="https://github.com/MalPatel21/Medical_Management_Database/blob/main/Medical_management_database.pdf" target="_blank">View GitHub Repo</a></li>
+          </ul>
+        </li>
+        <li>
+          <span style="text-decoration: underline;">NYS Open Data:</span> Built a BigQuery data warehouse, cleaned and processed data with Python, created Tableau dashboards, and identified patterns to inform urban planning and policy.
+          <ul>
+            <li><a href="https://github.com/MalPatel21/NYS_Open_Data/blob/main/cis4400_group%204_final_.pdf" target="_blank">View GitHub Repo</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== Lilac Internship ===== -->
+  <div class="experience-item">
+    <div class="experience-header" onclick="toggleExperience(this)">
+      <span class="arrow">&#9656;</span>
+      Lilac Software Internship
+    </div>
+
+    <div class="experience-content">
+      <ul>
+        <li>Created a dbt model to consolidate 10+ Snowflake tables into a unified dataset, streamlining analytics and reporting.</li>
+        <li>Developed a workaround for lack of direct client data by using SQL DDL and DBT to build a robust data validation framework, then fine-tuned it to handle variations once data became available.</li>
+        <li>Cleaned, standardized, and analyzed large CMS datasets to uncover factors behind shifts in health plan measures and star ratings, informing leadership decisions and improvement strategies.</li>
+        <li>Created and presented Python data visualisations demonstrating shifts in star ratings, with select visuals adopted by stakeholders for investor presentations, enhancing transparency and confidence in strategic initiatives.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== Cambridge ===== -->
+  <div class="experience-item">
+    <div class="experience-header" onclick="toggleExperience(this)">
+      <span class="arrow">&#9656;</span>
+      University of Cambridge
+    </div>
+
+    <div class="experience-content">
+      <ul>
+        <li>
+          <span style="text-decoration: underline;">CVD Analysis:</span> Processed and analyzed a 70,000-patient dataset to evaluate how demographics, behavior, and medical factors such as age, gender, cholesterol, glucose, and pulse pressure affect cardiovascular disease risk.
+          <ul>
+            <li><a href="https://malpatel21.github.io/CVD-EDA-Project_M1/" target="_blank">View GitHub Page</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
